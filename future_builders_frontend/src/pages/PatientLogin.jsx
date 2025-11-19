@@ -55,7 +55,7 @@ const PatientLogin = () => {
 
         <p className="text-center mt-3 text-sm">
           Don’t have an account?{" "}
-          <Link to="/register" className="text-blue-600">
+          <Link to="/patient/register" className="text-blue-600">
             Register
           </Link>
         </p>

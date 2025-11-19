@@ -12,6 +12,7 @@ import DoctorDashboard from "./pages/DoctorDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import ViewDoctors from "./pages/ViewDoctors";
 import BookAppointment from "./pages/BookAppointment";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Routes>
 
           {/* Public */}
-          <Route path="/" element={<PatientLogin />} />
-          <Route path="/register" element={<PatientRegister />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/patient/login" element={<PatientLogin />} />
+          <Route path="/patient/register" element={<PatientRegister />} />
           <Route path="/doctor/login" element={<DoctorLogin />} />
           <Route path="/admin/login" element={<AdminLogin />} />
 
