@@ -15,7 +15,7 @@ const AdminDashboard = () => {
   const createDoctor = async (e) => {
     e.preventDefault();
     try {
-      await api.post("/admin/create-doctor", form);
+      await api.post("/admin/doctors", form);
       alert("Doctor created!");
       setForm({ name: "", email: "", password: "", speciality: "" });
     } catch (err) {
